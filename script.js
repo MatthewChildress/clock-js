@@ -16,15 +16,15 @@ function theTime() {
     let d = time.getDate();
     let mo = time.getMonth() + 1; //Months are in array. May shows at 4 so +1 needed.
     let y = time.getFullYear();
+    let utc = time.getTime()
     // .getHours(), .getMinutes(), .getSeconds() are part of Date.prototype
     hours = checkTime(h);
     mins = checkTime(m);
     secs = checkTime(s);
     // template literals needed else it returns undefined
     document.getElementById("clock").textContent = `${hours} : ${mins} : ${secs}`;
-
-
     document.getElementById("date").textContent = `${wd}, ${d} - ${mo} - ${y}`;
+    document.getElementById("utc").textContent = `${utc}`;
 }
 
 // don't forget to add i
