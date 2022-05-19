@@ -1,3 +1,8 @@
+/*
+using getTime() returns milliseconds since 1-1-1970.
+need to use Date functions instead
+*/
+
 const intBtn = document.getElementById("intFormat");
 const usaBtn = document.getElementById("usaFormat");
 const fullDayBtn = document.getElementById("fullDayTime");

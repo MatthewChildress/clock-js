@@ -181,9 +181,57 @@ main {
 }
 
 .top-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
     grid-column: 31 / 41;
     grid-row: 10 / 20;
-    border: 1px solid rgb(255,204,51);
+}
+
+.top-container >*:hover {
+    background:rgb(136, 204, 255);
+}
+
+.top-container a {
+    text-decoration:none;
+    color:rgb(0,0,0);
+}
+
+.git-repo {
+    border:none;
+    height:2.5rem;
+    width:6.5rem;
+    border-radius:2rem;
+    background:rgb(246, 246, 250);
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.55em;
+}
+
+.lcars-site {
+    border:none;
+    height:2.5rem;
+    width:6.5rem;
+    border-radius:2rem;
+    background:rgb(203, 67, 151);
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.55em;
+}
+
+.st-site {
+    border:none;
+    height:2.5rem;
+    width:6.5rem;
+    border-radius:2rem;
+    background:rgb(255, 204, 102);
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.55em;
 }
 
 .bottom-main {
@@ -208,6 +256,7 @@ main {
     padding:0.25em;
     grid-column: 1 / 41;
     grid-row: 2 / 7;
+    gap:0.2em;
 }
 
 .bottom-container >*:hover {
@@ -217,37 +266,49 @@ main {
 .int-format {
     border:none;
     height:3rem;
-    width:7rem;
+    width:10rem;
     border-radius:2rem;
     background:rgb(51, 204, 153);
-    font-weight:bolder;
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.4em;
 }
 
 .usa-format {
     border:none;
     height:3rem;
-    width:7rem;
+    width:10rem;
     border-radius:2rem;
     background:rgb(255, 170, 0);
-    font-weight:bolder;
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.4em;
 }
 
 .twenty-four {
     border:none;
     height:3rem;
-    width:7rem;
+    width:10rem;
     border-radius:2rem;
     background:rgb(204, 51, 255);
-    font-weight:bolder;
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.4em;
 }
 
 .twelve {
     border:none;
     height:3rem;
-    width:7rem;
+    width:10rem;
     border-radius:2rem;
     background:rgb(255, 187, 170);
-    font-weight:bolder;
+    font-weight:bold;
+    text-align:right;
+    padding:2em 1.5em 0 0;
+    font-size:0.4em;
 }
 
 .date-text {
