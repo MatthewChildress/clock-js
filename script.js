@@ -29,7 +29,7 @@ function theTime() {
     mins = checkTime(m);
     secs = checkTime(s);
     // template literals needed else it returns undefined
-    document.getElementById("clock").textContent = `${hours} : ${mins} : ${secs}`;
+    document.getElementById("clock").textContent = `     ${hours} : ${mins} : ${secs}`;
     document.getElementById("date").textContent = `${wd}, ${d} - ${mo} - ${y}`;
     document.getElementById("utc").textContent = `${utc}`;
 }

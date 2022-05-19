@@ -443,13 +443,25 @@ main {
     
     .numbers {
         grid-column: 1 / 41;
-        grid-row: 5 / 10;
+        grid-row: 10 / 15;
         font-size:1em;
     }
 
-    .button-container {
+    .top-container {
+        flex-direction:row;
+        gap:0.25em;
         grid-column: 2 / 40;
-        grid-row: 14 / 20;
+        grid-row: 19 / 20;
+    }
+
+    .git-repo, .lcars-site, .st-site {
+        height:4em;
+        width:9em;
+    }
+
+    .int-format, .usa-format, .twenty-four, .twelve {
+        width:9em;
+        height:3.5em;
     }
 }
 
@@ -469,6 +481,44 @@ main {
     .numbers {
         font-size:1em;
     }
+
+    .git-repo, .lcars-site, .st-site {
+        height:5em;
+        width:10em;
+    }
+
+    .int-format, .usa-format, .twenty-four, .twelve {
+        width:12em;
+        height:5em;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1200px) {
+    body {
+        font-size:0.65rem;
+    }
+
+    main {
+        width:50%;
+    }
+    .logo-name {
+        font-size:1.5rem;
+    }
+    
+    .numbers {
+        font-size:1.2em;
+    }
+
+    .git-repo, .lcars-site, .st-site {
+        height:6em;
+        width:12em;
+    }
+
+    .int-format, .usa-format, .twenty-four, .twelve {
+        width:12em;
+        height:5em;
+    }
+
 }
 
 @keyframes numchange {
