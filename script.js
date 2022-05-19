@@ -1,7 +1,9 @@
-/*
-using getTime() returns milliseconds since 1-1-1970.
-need to use Date functions instead
-*/
+const intBtn = document.getElementById("intFormat");
+const usaBtn = document.getElementById("usaFormat");
+const fullDayBtn = document.getElementById("fullDayTime");
+const halfDayBtn = document.getElementById("halfDayTime");
+
+
 
 setInterval(theTime, 1000);
 // setInterval(function,y) takes a function and updates by millisecond. 1000 = 1 second. setTimeout doesn't work for set up.
